@@ -1,12 +1,12 @@
 <html>
 <head>
 	<title>My Portfolio</title>
-	<link rel="stylesheet" rel="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header>
-		<h1>Binayak Shrestha</h1>
-		<h5>Web Developer |  Programmer</h5>
+		<p id="name">Binayak Shrestha</p>
+		<p id="def">Web Developer |  Programmer</p>
 	</header>
 	<nav>
 		<ul>
@@ -17,25 +17,55 @@
 	</nav>
 	<section id="about">
 		<h2>About Me</h2>
-		<p>
-			Hello, I am Binayak Shrestha. I am from Kathmandu. This is my first Portfolio.
+		<p id="aboutme">
+			Hello, I am Binayak Shrestha. I am from Kahmandu and this is my first portfolio. I am an enthusiastic learner, curious, calm and friendly guy. I have a strong interest in tech and cybersecurity. I enjoy exploring new tools, building small projects and improving step by step.I enjoy challening myself with new tasks and expanding what I can do.
 		</p>
 	</section>
 	<section id="projects">
 		<h2>My Projects</h2>
 		<article>
 			<h4>1) Weather application</h4>
-			<p>This was my main project during my first year. I developed a real-time working weather application which can be used to check the weather of any particular city or country. The application updates the information automatically when we search for a city, so there is no need to refresh the page.</p>
+			<img src="weatherpic.avif" width="250px">
+			<p>The Weather Application was one of the first full-stack projects I built during my first year. I developed a real-time working weather application which can be used to check the weather of any particular city or country. The application updates the information automatically when we search for a city, so there is no need to refresh the page. I used OpenWeatherAPI to retrieve real time temperature, weather, humidty, wind speed and other basic condition details. 
+			</p>
+				<p>The technologies I used were:</p>
+				<ul>
+					<li>HTML & CSS: Page layout and styling</li>
+					<li>Javascript: Fetching data from API and caching</li>
+					<li>PHP: Backend logic for data handling</li>
+					<li>MySQL: Storing weather data</li>
+					<li>OpenWeatherAPI: Live weather information</li>
+				</ul>
+            <p> This project helped me understand the full-stack development functions in real time. It strengthened my foundation in web development and made me more confident working with APIs, database and general Javascript and CSS things.</p>
 		</article>
 		<article>
 			<h4>2) Tic tac toe game</h4>
-			<p>This also was one of my main projects during the first year. I developed a tic tac toe game in Python which implemented the use of functions, file handling and core Python programming concepts.This game allows two players to play against each other, keep track of scores and save the game results to a file.</p>
+			<img src="tictactoeimage.jpg" width="250px">
+			<p>The Tic Tac toe game was also one of the first projects I built using Python during my first year.I built this Tic-Tac-Toe game in Python as a fun yet challenging way to learn how to structure a program, think logically, and break a game into clear, reusable functions. It started as a simple idea but quickly became a project where I could really test my problem solving skills and experiment with coding.</p>
+			<p>The technologies implemented were:</p>
+			<ul>
+				<li>Python:Core programming language</li>
+				<li>Lists and Loops:For board representation and gameplay flow</li>
+				<li>Conditional statements:For game rules,win and draw selection</li>
+				<li>Functions:To make the code reusable, clean and easy to maintain</li>
+			</ul>
+			<p>This project strengthened my programming fundamentals and taught me how to create a complete, interactive game using Python. It was an important stepping stone in my journey to more complex projects and this project helped me to develop a strong foundation and understanding of Python programming.
+			</p>
 		</article>
 	</section>
 	<section id="contact">
 		<h2>My Contacts</h2>
 		<p>Email:rtx.binayak@gmail.com</p>
 		<p>Phone: 9818563401</p>
+		<h3>Send me a message</h3>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text"><br><br>
+        <label for="email">Email:</label>
+        <input type="email"><br><br>
+        <textarea rows="5" placeholder="Your Message"></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
 	</section>
 
 	

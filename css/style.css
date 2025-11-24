@@ -1,0 +1,118 @@
+
+	body {
+    background-color: #000;
+    color: white; 
+}
+#about {
+    padding: 20px;
+}
+
+#about h2 {
+    color: cyan;               
+    font-size: 28px;
+}
+
+#aboutme {
+    background: #333;            
+    max-width: 700px;
+    padding: 15px;
+    border-radius: 20px;
+    line-height: 1.6;
+}
+
+
+#projects {
+    padding: 20px;
+}
+
+#projects h2 {
+    color: cyan;
+    font-size: 28px;
+}
+
+article {
+    background: #333;
+    padding: 15px;
+    border-radius: 20px;
+    max-width:1000px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+article h4 {
+    color: cyan;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+article p,
+article ul {
+    margin-left: 15px;
+}
+
+article ul {
+    padding-left: 20px;
+}
+img{
+	margin-left:15px;
+}
+
+#contact {
+    padding: 20px;
+}
+
+#contact h2 {
+    color: cyan;
+    font-size: 28px;
+ 
+}
+
+#contact p {
+    background: #333;
+    color: #F0F0DC;
+    max-width: 700px;
+    padding: 15px;
+    border-radius: 20px;
+    line-height: 1.6;
+}
+#name {
+    font-size: 43px;
+    font-family: 'Brush Script MT', 'Lucida Handwriting', 'Cursive', sans-serif;
+    color: #FCE472;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    margin-left:15px;
+}
+#def{
+    color:cyan;
+    font-size:20px;
+    color:lightgreen;
+    margin-left:15px;
+}
+nav {
+    background: #333;
+    padding: 5px 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size:20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
