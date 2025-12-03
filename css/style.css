@@ -1,40 +1,105 @@
-
-	body {
-    background-color: #000;
-    color: white; 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-#about {
+
+body {
+    background-color: #000;
+    color: white;
+    font-family: sans-serif;
+}
+
+#name {
+    font-size: 43px;
+    font-family: 'Brush Script MT', 'Lucida Handwriting', 'Cursive', sans-serif;
+    color: #FCE472;
+    letter-spacing: 2px;
+    margin: 15px;
+}
+
+#def {
+    font-size: 20px;
+    color: lightgreen;
+    margin-left: 15px;
+}
+
+nav {
+    background: #333;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav li {
+    font-size: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+#hero {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+#video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+#hero-content h1 {
+    font-size: 36px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+section {
     padding: 20px;
 }
 
-#about h2 {
-    color: cyan;               
+section h2 {
+    color: cyan;
     font-size: 28px;
+    margin-bottom: 15px;
 }
 
 #aboutme {
-    background: #333;            
+    background: #333;
     max-width: 700px;
     padding: 15px;
     border-radius: 20px;
     line-height: 1.6;
 }
 
-
-#projects {
-    padding: 20px;
-}
-
-#projects h2 {
-    color: cyan;
-    font-size: 28px;
-}
-
 article {
     background: #333;
     padding: 15px;
     border-radius: 20px;
-    max-width:1000px;
     line-height: 1.6;
     margin-bottom: 25px;
 }
@@ -44,6 +109,7 @@ article h4 {
     font-size: 22px;
     margin-bottom: 10px;
 }
+
 article p,
 article ul {
     margin-left: 15px;
@@ -52,18 +118,18 @@ article ul {
 article ul {
     padding-left: 20px;
 }
-img{
-	margin-left:15px;
+
+article img {
+    width: 250px;
+    margin-bottom: 10px;
+    margin-left: 15px;
 }
 
-#contact {
-    padding: 20px;
-}
-
-#contact h2 {
-    color: cyan;
-    font-size: 28px;
- 
+#skills article ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 10px;
 }
 
 #contact p {
@@ -72,47 +138,70 @@ img{
     max-width: 700px;
     padding: 15px;
     border-radius: 20px;
-    line-height: 1.6;
+    margin-bottom: 10px;
 }
-#name {
-    font-size: 43px;
-    font-family: 'Brush Script MT', 'Lucida Handwriting', 'Cursive', sans-serif;
-    color: #FCE472;
-    letter-spacing: 2px;
-    margin-bottom: 5px;
-    margin-left:15px;
-}
-#def{
-    color:cyan;
-    font-size:20px;
-    color:lightgreen;
-    margin-left:15px;
-}
-nav {
-    background: #333;
-    padding: 5px 15px;
+
+form input,
+form textarea {
+    padding: 10px;
     border-radius: 10px;
-    display: inline-block;
-    margin-left: 20px;
+    border: none;
+    margin-top: 10px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+form button {
+    background: lightgoldenrodyellow;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-    font-size:20px;
+h4 {
+    margin-left: 15px;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
+@media screen and (min-width: 768px) {
+    #hero {
+        height: 400px;
+    }
+    #hero-content h1 {
+        font-size: 42px;
+        padding: 15px 25px;
+    }
+    #name {
+        font-size: 48px;
+    }
+    #def {
+        font-size: 22px;
+    }
+    article img {
+        width: 300px;
+    }
+    form button {
+        padding: 15px 25px;
+        font-size: 18px;
+    }
 }
 
-
-
-
+@media screen and (min-width: 1024px) {
+    #hero {
+        height: 500px;
+    }
+    #hero-content h1 {
+        font-size: 50px;
+        padding: 20px 30px;
+    }
+    #name {
+        font-size: 55px;
+    }
+    #def {
+        font-size: 24px;
+    }
+    article img {
+        width: 350px;
+    }
+    form button {
+        padding: 20px 35px;
+        font-size: 20px;
+    }
+}
